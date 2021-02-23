@@ -23,7 +23,6 @@ internal class CitiesControllerTest {
 
     @Test
     fun `get all cities return 200`() {
-        //fun
         mockMvc.get("/cities")
             .andExpect { status { isOk() } }
             .andExpect {
